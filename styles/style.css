@@ -3,6 +3,7 @@
     --black:#000;
     --white:#fff;
     --grey:#323232;
+    --bg:#E1E1E1;
 }
 *{
     padding: 0;
@@ -27,7 +28,7 @@ li{
 /* header */
 
 .header{
-    margin: 50px 0 40px 0;
+    margin: 50px 0 60px 0;
 }
 .header .container{
     display: flex;
@@ -69,4 +70,88 @@ li{
     width: 100%;
     height: 2px;
     background: var(--grey);
+}
+.popular{
+    margin-bottom: 60px;
+}
+.popular__block{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 294px 294px;
+    gap: 30px;
+}
+.popular__box{
+    grid-column: span 2;
+    grid-row: span 1;
+    background: var(--bg);
+    border-radius: 10px;
+    position: relative;
+}
+.popular__box2{
+    grid-column: span 3;
+    grid-row: span 2;
+    background: var(--bg);
+    border-radius: 10px;
+    position: relative;
+}
+.popular__sale{
+    font-family: var(--mont);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: var(--white);
+    background: var(--grey);
+    padding: 11px 38px;
+    border-radius: 10px;
+    margin: 16px 0 0 20px;
+}
+.popular__minibox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.popular__minibox1{
+    position: absolute;
+    left: 100px;
+    bottom: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.popular__texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.popular__text{
+    font-family: var(--mont);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--grey);
+}
+.popular__title{
+    font-family: var(--mont);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.popular__cost{
+    font-family: var(--mont);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: var(--grey);
 }

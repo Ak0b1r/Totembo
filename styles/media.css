@@ -1,11 +1,29 @@
 @media (max-width:1200px) {
-    
+    .header .container{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
 }
 @media (max-width:992px) {
-    
+    .header__div1{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
 }
 @media (max-width:768px) {
-    
+    .header{
+        margin-top: 30px;
+    }
+    .header__list{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+    }
+    #ru{
+        margin-left: 0;
+    }
 }
 @media (max-width:576px) {
     
